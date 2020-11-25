@@ -34,38 +34,7 @@
 	<script src="js/html5shiv.min.js"></script>
 	<![endif]-->
 
-		<script type="text/javascript">
-		$(function() {
-			if (!document.cookie.match(/(?:^|;\ *)__cookie_law__=1/)) {
-				var block = $('<div>')
-					.addClass('wb_cookie_policy')
-					.css({
-						backgroundColor: "rgba(247, 160, 10, 0.98)"					});
-				$('<div class="policy-message">')
-						.html("")
-						.css({
-							color: "#ffffff",
-							fontFamily: "Arial,Helvetica,sans-serif",
-							fontSize: 20						})
-						.appendTo(block);
-				var btnWrapper = $('<div class="policy-button">').appendTo(block);
-				$('<button>')
-						.attr({type: 'button'})
-						.css({
-							backgroundColor: "#5cb85c",
-							color: "#ffffff",
-							fontFamily: "Arial,Helvetica,sans-serif",
-							fontSize: 20						})
-						.text(")
-						.on('click', function() {
-							document.cookie = '__cookie_law__=1; path=/; expires=Thu, 12 Aug 2021 18:24:59 GMT';
-							block.remove();
-						})
-						.appendTo(btnWrapper);
-				$(document.body).append(block);
-			}
-		});
-	</script>
+	
 	</head>
 
 
